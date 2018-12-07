@@ -1,6 +1,6 @@
 # wccc
 
-> A web application for WCCC
+> A web application for Wellesley Community Children's Center
 
 ## To Do List
 - Add multi-level dropdown menus in navbar

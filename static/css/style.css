@@ -85,6 +85,8 @@ button[aria-expanded=false] .fa-chevron-up {
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  display: flex;
+  align-items: center;
 }
 
 .masthead .overlay {
@@ -105,4 +107,27 @@ button[aria-expanded=false] .fa-chevron-up {
   .masthead {
     height: 60vh;
   }
+}
+
+.special-font {
+  font-family: 'Garamond', serif;
+  color: #004b91;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: -0.3rem;
+}
+
+@media (max-width: 600px) {
+  .mb-5-on-mobile {
+    margin-bottom: 10px;
+  }
+}
+
+.jumbotron {
+  margin: 0px;
+  padding: 3rem;
+}
+
+.footer {
+  padding: 2rem;
 }

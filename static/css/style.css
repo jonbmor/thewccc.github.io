@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
 
 #app {
   position: fixed;
@@ -11,6 +12,12 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
+hr {
+  max-width: 50vh;
+  border-width: 3px;
+  border-color: #004B91;
+}
+
 .navbar {
   margin-bottom: 0px;
 }
@@ -20,7 +27,7 @@ html, body {
 }
 
 .navbar-brand {
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 @media (max-width: 500px) {
@@ -34,12 +41,7 @@ html, body {
   height: 80px;
 }
 
-nav button.navbar-toggler {
-  margin-right: 50px;
-}
-
 .navbar .navbar-nav {
-  float: none;
   vertical-align: top;
 }
 
@@ -63,11 +65,17 @@ a.nav-link:hover {
   .navbar-nav a {
     margin-right: 10px;
   }
+  #search-icon-sm {
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {
   .navbar-nav a {
     margin-bottom: 10px;
+  }
+  #search-icon-lg {
+    display: none;
   }
 }
 
@@ -110,11 +118,9 @@ button[aria-expanded=false] .fa-chevron-up {
 }
 
 .special-font {
-  font-family: 'Garamond', serif;
-  color: #004b91;
-  font-weight: 200;
+  font-family: 'Fredoka One', cursive;
+  color: #004B91;
   text-transform: uppercase;
-  letter-spacing: -0.3rem;
 }
 
 @media (max-width: 600px) {
@@ -123,9 +129,56 @@ button[aria-expanded=false] .fa-chevron-up {
   }
 }
 
-.jumbotron {
-  margin: 0px;
+.showcase {
+  background-color: #efefef;
+}
+
+.showcase .showcase-text {
   padding: 3rem;
+  background-color: #ffffff;
+}
+
+.showcase .showcase-img {
+  min-height: 20rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+#showcase-ecp {
+  background-image: url(../sample2.jpg);
+  background-position: center bottom;
+}
+
+#showcase-asp {
+  background-image: url(../sample3.jpg);
+}
+
+.call-to-action {
+  padding: 8rem;
+  background-color: #0074DF;
+}
+
+.row-striped:nth-of-type(odd){
+  background-color: #efefef;
+  border-left: 4px #000000 solid;
+}
+
+.row-striped:nth-of-type(even){
+  background-color: #ffffff;
+  border-left: 4px #efefef solid;
+}
+
+.row-striped {
+    padding: 15px 0;
+}
+
+.calendar a:hover {
+  text-decoration: none;
 }
 
 .footer {

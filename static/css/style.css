@@ -18,6 +18,16 @@ hr {
   border-color: #004B91;
 }
 
+.btn-round {
+  border: none;
+  border-radius: 300px;
+}
+
+.btn-xl {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
 .navbar {
   margin-bottom: 0px;
 }
@@ -65,15 +75,21 @@ a.nav-link:hover {
   .navbar-nav a {
     margin-right: 10px;
   }
-  #search-icon-sm {
-    display: none;
-  }
 }
 
 @media (max-width: 1000px) {
   .navbar-nav a {
     margin-bottom: 10px;
   }
+}
+
+@media (min-width: 1200px) {
+  #search-icon-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
   #search-icon-lg {
     display: none;
   }
@@ -95,6 +111,7 @@ button[aria-expanded=false] .fa-chevron-up {
   padding-bottom: 8rem;
   display: flex;
   align-items: center;
+  height: 80vh;
 }
 
 .masthead .overlay {
@@ -113,7 +130,7 @@ button[aria-expanded=false] .fa-chevron-up {
 
 @media (min-width: 1000px) {
   .masthead {
-    height: 60vh;
+    height: 90vh;
   }
 }
 
@@ -158,9 +175,10 @@ button[aria-expanded=false] .fa-chevron-up {
   background-image: url(../sample3.jpg);
 }
 
-.call-to-action {
-  padding: 8rem;
-  background-color: #0074DF;
+@media (max-width: 600px) {
+  .call-to-action {
+    padding: 2rem;
+  }
 }
 
 .row-striped:nth-of-type(odd){
@@ -177,8 +195,13 @@ button[aria-expanded=false] .fa-chevron-up {
     padding: 15px 0;
 }
 
-.calendar a:hover {
-  text-decoration: none;
+@media (max-width: 450px) {
+  #cal-badge {
+    font-size: 1.8rem;
+  }
+  #cal-badge-text {
+    font-size: 1.5rem;
+  }
 }
 
 .footer {

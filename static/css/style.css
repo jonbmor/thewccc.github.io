@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Short+Stack');
 
 #app {
   position: fixed;
@@ -140,43 +141,47 @@ button[aria-expanded=false] .fa-chevron-up {
 
 .special-font {
   font-family: 'Fredoka One', cursive;
-  color: #004B91;
+  color: #004b91;
   text-transform: uppercase;
 }
 
-@media (max-width: 600px) {
-  .mb-5-on-mobile {
-    margin-bottom: 10px;
+img.ecp-img {
+  content: url(../sample2.jpg);
+}
+
+img.asp-img {
+  content: url(../sample3.jpg);
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+.card-text, .card-footer {
+  font-size: 1.6rem;
   }
 }
 
-.showcase {
-  background-color: #efefef;
-}
-
-.showcase .showcase-text {
-  padding: 3rem;
-  background-color: #ffffff;
-}
-
-.showcase .showcase-img {
-  min-height: 20rem;
-  background-size: cover;
-}
-
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
+@media (min-width: 1000px) {
+  .card-container {
+    max-width: 70vw;
+    margin: auto;
   }
 }
 
-#showcase-ecp {
-  background-image: url(../sample2.jpg);
-  background-position: center bottom;
+.secondary-title {
+  font-family: 'Short Stack', cursive;
+  color: #000000;
+  font-weight: bold;
+  font-size: 3rem;
+  padding-bottom: 10px;
 }
 
-#showcase-asp {
-  background-image: url(../sample3.jpg);
+.bg-color-darkblue {
+  background-color: #004b91;
 }
 
 @media (max-width: 600px) {
@@ -210,6 +215,16 @@ button[aria-expanded=false] .fa-chevron-up {
 
 .footer {
   padding: 2rem;
+}
+
+#footer-logo {
+  max-width: 140px;
+}
+
+@media (min-width: 1600px) {
+  #footer-container {
+    max-width: 70vw;
+  }
 }
 
 .main-box {
